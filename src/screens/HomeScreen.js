@@ -1,5 +1,11 @@
 import React from 'react';
-import {View, Text, Dimensions,ImageBackground, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Text,
+  Dimensions,
+  ImageBackground,
+  TouchableOpacity,
+} from 'react-native';
 const {height, width} = Dimensions.get('window');
 export default function HomeScreen(props) {
   React.useLayoutEffect(() => {
@@ -10,7 +16,7 @@ export default function HomeScreen(props) {
   return (
     <ImageBackground
       // resizeMode="stretch"
-    source={require('../assets/bg5.jpg')}
+      source={require('../assets/bg5.jpg')}
       style={{
         height,
         width,
@@ -18,7 +24,14 @@ export default function HomeScreen(props) {
         justifyContent: 'space-around',
       }}>
       <View>
-        <Text style={{fontSize: height * 0.08, fontWeight: 'bold', color:'#26D491'}}>Tally</Text>
+        <Text
+          style={{
+            fontSize: height * 0.08,
+            fontWeight: 'bold',
+            color: '#26D491',
+          }}>
+          Tally
+        </Text>
       </View>
       <View>
         <TouchableOpacity
@@ -51,6 +64,23 @@ export default function HomeScreen(props) {
           }}>
           <Text style={{fontSize: height * 0.03, fontWeight: 'bold'}}>
             View
+          </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={() => props.navigation.navigate('About')}
+          style={{
+            backgroundColor: '#fff',
+            marginTop: height * 0.03,
+            elevation: 3,
+            height: height * 0.08,
+            borderRadius: height * 0.02,
+            width: width * 0.4,
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+          <Text style={{fontSize: height * 0.03, fontWeight: 'bold'}}>
+            About
           </Text>
         </TouchableOpacity>
       </View>
