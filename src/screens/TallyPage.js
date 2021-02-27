@@ -257,6 +257,9 @@ export default function TallyPage(props) {
                     style={{
                       fontSize: height * 0.026,
                       color: '#fff',
+                      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+                      textShadowOffset: {width: -1, height: 1},
+                      textShadowRadius: 10,
                       fontWeight: 'bold',
                     }}>
                     {e.tallyName}
