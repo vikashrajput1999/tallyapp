@@ -62,7 +62,7 @@ export default function CreateTally(props) {
             borderTopLeftRadius: height * 0.04,
             elevation: 5,
             borderBottomLeftRadius: height * 0.04,
-            height: height * 0.06,
+            height: 'auto',
             alignItems: 'center',
             justifyContent: 'center',
           }}>
@@ -127,7 +127,7 @@ export default function CreateTally(props) {
                 setScreenState({...screenState, tallyName: text})
               }
               value={screenState.tallyName}
-              style={{backgroundColor: '#fff', borderRadius: height * 0.01}}
+              style={{backgroundColor: '#fff',height: height * 0.07, borderRadius: height * 0.01}}
               placeholder="Enter here..."
             />
           </View>
@@ -218,7 +218,7 @@ export default function CreateTally(props) {
                 <TextInput
                   keyboardType="numeric"
                   value={screenState.targetCountValue}
-                  style={{backgroundColor: '#fff', width: width * 0.2}}
+                  style={{backgroundColor: '#fff',height: height * 0.05, width: width * 0.2}}
                   onChangeText={(text) => {
                     setScreenState({
                       ...screenState,

@@ -52,7 +52,7 @@ export default function TallyPage(props) {
             borderTopLeftRadius: height * 0.04,
             elevation: 5,
             borderBottomLeftRadius: height * 0.04,
-            height: height * 0.06,
+            height:'auto',
             alignItems: 'center',
             justifyContent: 'center',
           }}>
@@ -155,6 +155,8 @@ export default function TallyPage(props) {
                   style={{
                     padding: 2,
                     width: width * 0.2,
+                    height:height * 0.03,
+                    justifyContent:'center',
                     alignItems: 'center',
                     borderRadius: height * 0.01,
                     borderWidth: 1,
@@ -172,6 +174,8 @@ export default function TallyPage(props) {
                   }}
                   style={{
                     padding: 2,
+                    height:height * 0.03,
+                    justifyContent:'center',
                     width: width * 0.2,
                     alignItems: 'center',
                     borderRadius: height * 0.01,
@@ -321,8 +325,10 @@ const styles = StyleSheet.create({
   },
   modalView: {
     margin: 20,
-    height: height * 0.25,
-    width: width * 0.5,
+    minHeight: height * 0.2,
+    minWidth: width * 0.5,
+    height:'auto',
+    width:'auto',
     backgroundColor: 'white',
     borderRadius: 20,
     padding: 35,

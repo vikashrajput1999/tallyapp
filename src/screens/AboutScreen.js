@@ -23,7 +23,7 @@ export default function AboutScreen(props) {
             borderTopLeftRadius: height * 0.04,
             elevation: 5,
             borderBottomLeftRadius: height * 0.04,
-            height: height * 0.06,
+            height: 'auto',
             alignItems: 'center',
             justifyContent: 'center',
           }}>
@@ -74,8 +74,7 @@ export default function AboutScreen(props) {
             textAlign: 'center',
             paddingTop: height * 0.04,
           }}>
-          In this app, there are various Diet categories like Carbohydrates,
-          Protiens, Fats, Vitamins.....
+          In this app, user can create and update a number of tallys or targets to organize activities 
         </Text>
         <Text
           style={{
@@ -85,7 +84,7 @@ export default function AboutScreen(props) {
             textAlign: 'center',
             paddingTop: height * 0.05,
           }}>
-          Also in this app, you can manage your function details.{'\n'}
+           Also , targets are reset automatically once it's done.{'\n'}
         </Text>
         <Text
           style={{
